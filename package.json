@@ -4,6 +4,7 @@
   "description": "Intro JS & TS",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest --todo"
   },
   "repository": {
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/TristanEduProjet/angular_intro/issues"
   },
-  "homepage": "https://github.com/TristanEduProjet/angular_intro#readme"
+  "homepage": "https://github.com/TristanEduProjet/angular_intro#readme",
+  "devDependencies": {
+    "typescript": "^3.3.4000"
+  }
 }
