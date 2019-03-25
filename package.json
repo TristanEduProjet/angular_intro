@@ -1,0 +1,27 @@
+{
+  "name": "angular_intro",
+  "version": "0.0.1",
+  "description": "Intro JS & TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --todo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TristanEduProjet/angular_intro.git"
+  },
+  "keywords": [
+    "intro",
+    "angular",
+    "javascript",
+    "typescript",
+    "pokemon"
+  ],
+  "author": "TristanEduProjet",
+  "license": "none",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/TristanEduProjet/angular_intro/issues"
+  },
+  "homepage": "https://github.com/TristanEduProjet/angular_intro#readme"
+}
