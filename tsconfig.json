@@ -12,15 +12,21 @@
     //"declarationMap": true,
     "inlineSourceMap": false,
     "inlineSources": false,
-    "esModuleInterop": true
-
+    "esModuleInterop": true,
+    "emitBOM": false,
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true
   },
   "compileOnSave": true,
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "types/**/*"
   ],
   "exclude": [
     "node_modules",
-    "**/__tests__/*"
+    "**/__tests__/*",
+    "**/*.test.*"
   ]
 }

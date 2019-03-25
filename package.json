@@ -7,12 +7,12 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --coverage  --config jestconfig.json --passWithNoTests",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "test": "jest --coverage  --config jestconfig.json --passWithNoTests --colors",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "dist/**/*"
@@ -20,6 +20,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TristanEduProjet/angular_intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TristanEduProjet/angular_intro/issues"
   },
   "keywords": [
     "intro",
@@ -31,12 +34,13 @@
   "author": "TristanEduProjet",
   "license": "none",
   "private": true,
-  "bugs": {
-    "url": "https://github.com/TristanEduProjet/angular_intro/issues"
-  },
   "homepage": "https://github.com/TristanEduProjet/angular_intro#readme",
+  "dependencies": {
+    "@types/node": "^11.11.6"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.11",
+    "dts-gen": "^0.5.7",
     "jest": "^24.5.0",
     "prettier": "^1.16.4",
     "ts-jest": "^24.0.0",
